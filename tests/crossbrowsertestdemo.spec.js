@@ -6,5 +6,5 @@ test('My first cross-browser test', async ({ page }) => {
   await page.goto('https://www.google.com/');
   const title = await page.title();
   console.log('Title is:', title);
-  await expect(page).toHaveTitle(/Googles/);
+  await expect(page).toHaveTitle(/Google/);
 });
